@@ -4,7 +4,7 @@ config:
   framework: "Pelican"
   buildCommand: "pelican content -s publishconf.py"
   buildDir: "output"
-  runCommand: "pelican -l -b 0.0.0.0"
+  runCommand: "pelican -l"
   installCommand: 'pip install -r requirements.txt'
 ports:
   - protocol: "HTTPS"
