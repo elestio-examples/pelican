@@ -6,6 +6,8 @@ config:
   buildDir: "output"
   runCommand: "pelican -l"
   installCommand: 'pip install -r requirements.txt'
+  icon: "pelican.png"
+  screenshot: "screenshot.png"
 ports:
   - protocol: "HTTPS"
     targetProtocol: "HTTP"
@@ -25,3 +27,6 @@ exposedPorts:
 environments:
   - key: "ENV"
     value: "production"
+webUI:
+  - url: "https://[CI_CD_DOMAIN]"
+    label: "Website"    
